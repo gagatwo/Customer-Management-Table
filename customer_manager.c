@@ -40,8 +40,7 @@ struct DB//define DB
 };
 
 
-DB_T
-CreateCustomerDB(void)
+DB_T CreateCustomerDB(void)
 {
     
     DB_T d;
@@ -65,11 +64,9 @@ CreateCustomerDB(void)
 }
 
 
-
 /*--------------------------------------------------------------------*/
 //Destroy the Customer DataBase
-void
-DestroyCustomerDB(DB_T d)
+void DestroyCustomerDB(DB_T d)
 {
   //check the initial value
   assert(d!=NULL);
@@ -98,8 +95,7 @@ DestroyCustomerDB(DB_T d)
 
 /*--------------------------------------------------------------------*/
 //Register the customer information on DataBase
-int
-RegisterCustomer(DB_T d, const char *id,
+int RegisterCustomer(DB_T d, const char *id,
 		 const char *name, const int asset)
 {
   //check the initial value
@@ -132,8 +128,7 @@ RegisterCustomer(DB_T d, const char *id,
 }
 /*--------------------------------------------------------------------*/
 //Unregister the customer information from DB using the customer's ID
-int
-UnregisterCustomerByID(DB_T d, const char *id)
+int UnregisterCustomerByID(DB_T d, const char *id)
 {
   //check the initial value
   if(d == NULL || id == NULL) return -1;
@@ -190,8 +185,7 @@ UnregisterCustomerByID(DB_T d, const char *id)
 
 /*--------------------------------------------------------------------*/
 //Unregister the customer information from DB using the customer's Name
-int
-UnregisterCustomerByName(DB_T d, const char *name)
+int UnregisterCustomerByName(DB_T d, const char *name)
 {
   //check the initial value
   if(d == NULL || name == NULL) return -1;
@@ -247,8 +241,7 @@ UnregisterCustomerByName(DB_T d, const char *name)
 }
 /*--------------------------------------------------------------------*/
 //Find the customer's asset from DB using his ID
-int
-GetAssetByID(DB_T d, const char* id)
+int GetAssetByID(DB_T d, const char* id)
 {
   //check the initial value
   if(d == NULL || id == NULL) return -1;
@@ -264,8 +257,7 @@ GetAssetByID(DB_T d, const char* id)
 }
 /*--------------------------------------------------------------------*/
 //Find the customer's asset from DB using his Name
-int
-GetAssetByName(DB_T d, const char* name)
+int GetAssetByName(DB_T d, const char* name)
 {
   //check the initial value
   if(d == NULL || name == NULL) return -1;

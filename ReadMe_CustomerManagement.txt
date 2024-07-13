@@ -20,5 +20,5 @@ GetAssetByName :   해당 이름을 가진 고객의 자산을 찾는 함수
 
 
 - Customer_managemente_DataStructure.pdf
-구현한 고객 관리 자료구조를 간단히 시각화한 자료입니다
+구현한 고객 관리 자료구조를 간단히 시각화한 자료
 
